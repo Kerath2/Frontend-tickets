@@ -1,4 +1,5 @@
 import React from 'react';
+import './custom-styles.css'
 import {
   DataTable,
   TableContainer,
@@ -53,8 +54,9 @@ const Sev1Table= ()=> {
     <DataTable
       rows={rows}
       headers={headers}
+      className="custom-table"
       render={({ rows, headers, getHeaderProps, getRowProps }) => (
-        <TableContainer title="Tickets">
+        <TableContainer >
           <Table size="compact">
             <TableHead>
               <TableRow>

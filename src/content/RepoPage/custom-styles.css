@@ -1,0 +1,13 @@
+/* Cambiar el color de fondo de los encabezados de la tabla */
+.custom-table .bx--data-table thead .bx--table-header {
+  background-color: #ff0000;
+  color: #fff; /* Cambiar el color del texto a blanco */
+}
+
+/* Cambiar el color de fondo de las celdas */
+.custom-table .bx--data-table tbody .bx--table-cell {
+  background-color: #00ff00;
+  color: #000; /* Cambiar el color del texto a negro */
+}
+
+
