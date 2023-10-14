@@ -1,1 +1,3 @@
-# Frontend-tickets
+# FRONTEND PARA TICKETS
+
+Usa yarn 
