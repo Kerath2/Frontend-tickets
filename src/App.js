@@ -6,10 +6,14 @@ import TutorialHeader from './components/TutorialHeader';
 import OpenCases from './components/OpenCases';
 import './App.css'
 
+import TablaSeveridad from './components/TablaSeveridad';
+import InfoQuarter from './components/InfoQuarter';
+
 function App() {
   return (
     <BrowserRouter>
       <div className="background-container">
+
         <TutorialHeader />  
         <Content>
             <OpenCases/>

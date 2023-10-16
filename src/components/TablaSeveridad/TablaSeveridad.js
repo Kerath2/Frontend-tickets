@@ -28,7 +28,7 @@ import './_tabla-severidad.scss'
 const TablaSeveridad = () => {
   return (
     <div className="tabla-severidad-container">
-      <table className="custom-table">
+      <table className="">
         <thead>
           <tr>
             <th>Severidad</th>

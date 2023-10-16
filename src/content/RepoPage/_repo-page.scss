@@ -9,11 +9,10 @@
 .container {
   background-color: #ffffff;
   padding: 20px;
-  width: 1400px;
   display: flex;
+  margin: 30px;
 }
 
-.right-column {
-  flex: 1;
+.container > div {
+  margin-right: 30px; /* Agrega margen a la derecha de los elementos internos */
 }
-

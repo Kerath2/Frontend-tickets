@@ -4,6 +4,7 @@ import RepoTable from './RepoTable';
 import TablaSeveridad from './../../components/TablaSeveridad';
 import InfoQuarter from './../../components/InfoQuarter';
 import './_repo-page.scss';
+import { Row } from 'carbon-components-react';
 
 const headers1 = [
   {
@@ -18,20 +19,43 @@ const headers1 = [
 
 const rows1 = [];
 
+// const RepoPage = () => {
+//   return (
+//     <Grid className="repo-page">
+//       <Column lg={16} className="repo-page__r1">
+//       <div className='container'>
+//     <TablaSeveridad/>    
+//     <InfoQuarter/>
+//     <InfoQuarter/>
+//     </div>
+//       </Column>
+//       <Column lg={16} className="repo-page__r1">
+//         <RepoTable headers={headers1} rows={rows1} />
+//       </Column>
+//     </Grid>
+//   );
+// };
+
 const RepoPage = () => {
   return (
     <Grid className="repo-page">
-      <Column lg={4} className="repo-page__r1">
-          <TablaSeveridad />
-      </Column>
-      <Column lg={4} className="repo-page__r1">
-          <InfoQuarter />
-      </Column>
-      <Column lg={16} className="repo-page__r1">
-        <RepoTable headers={headers1} rows={rows1} />
-      </Column>
+            <Column lg={4}> 
+                <TablaSeveridad/>
+            </Column>
+            <Column lg ={12}> 
+                <Row> 
+                    <Column>
+                        <InfoQuarter/>
+                    </Column>
+                    <Column>
+                        <InfoQuarter/>
+                    </Column>
+                </Row>
+                <Row>
+                   <RepoTable/> 
+                </Row>
+            </Column>
     </Grid>
   );
 };
-
 export default RepoPage;
