@@ -13,8 +13,9 @@ function App() {
       </Theme>
       <Content>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/repos" component={RepoPage} />
+          {/* <Route exact path="/" component={LandingPage} /> */}
+          {/* <Route path="/repos" component={RepoPage} /> */}
+          <Route path="/" component={RepoPage} />
         </Switch>
       </Content>
     </BrowserRouter>
