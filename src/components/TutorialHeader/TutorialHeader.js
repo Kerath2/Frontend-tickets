@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importa Link para la navegación
 import {
+    SideNavLink,
   Header,
   HeaderContainer,
   HeaderName,
@@ -43,6 +44,9 @@ const TutorialHeader = () => (
             <HeaderSideNavItems>
               <HeaderMenuItem as={Link} to="/repos">Repositories</HeaderMenuItem> {/* Utiliza Link para la navegación */}
             </HeaderSideNavItems>
+        <SideNavLink href="/grupo_aval" isActive = {true}>
+                Grupo Aval
+              </SideNavLink>    
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
