@@ -16,6 +16,7 @@ import {
 } from '@carbon/react';
 import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
 
+
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
@@ -27,7 +28,7 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName as={Link} to="/" prefix="IBM"> {/* Utiliza Link para la navegación */}
-          Grupo Aval Technical Resolution Team
+         Technical Resolution Team 
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem as={Link} to="/repos">Repositories</HeaderMenuItem> {/* Utiliza Link para la navegación */}

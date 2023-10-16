@@ -1,0 +1,12 @@
+.open-cases-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between; /* Puedes ajustar esto según tu diseño */
+  height: 200px; /* Establecer la altura deseada */
+  padding: 20px; /* Agregar espacio interior */
+}
+
+.dropdown-container {
+  flex: 1;
+  margin-right: 10px; /* Agrega margen entre los Dropdowns */
+}
