@@ -1,10 +1,15 @@
 @use '@carbon/react/scss/spacing' as *;
 
-.repo-page__r1 {
-  margin-top: $spacing-07;
-  padding-top: $spacing-05;
-  padding-bottom: $spacing-05;
+
+#repo-page {
+  .bx--grid-column {
+    background-color: red;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
+
 
 .container {
   background-color: #ffffff;
@@ -19,4 +24,5 @@
 
 #tarjetas{
     display: flex;
+
 }
