@@ -6,36 +6,14 @@
   padding-bottom: $spacing-05;
 }
 
-.paragraph-margin {
-  margin-top: 3px; /* Puedes ajustar este valor según tu preferencia */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 1400px;
+  display: flex;
 }
 
-
-.text-above-table-margin {
-  margin-top: 10px; /* Ajusta este valor según tu preferencia */
-}
-
-
-.texto1{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
-// Codigo de cambio de colores de las celdas de la tabla de severidad 1
-
-.custom-cell {
-  background-color: #ff0000; /* Cambia el color de fondo a rojo */
-  color: #ffffff; /* Cambia el color del texto a blanco */
-}
-
-
-
-
-/* Código de cambio de colores de los encabezados de la tabla */
-.custom-header {
-  background-color: #ff0000; /* Cambia el color de fondo a rojo */
-  color: #ffffff; /* Cambia el color del texto a blanco */
+.right-column {
+  flex: 1;
 }
 
