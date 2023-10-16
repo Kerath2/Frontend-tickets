@@ -5,7 +5,8 @@ import TablaSeveridad from './../../components/TablaSeveridad';
 import InfoQuarter from './../../components/InfoQuarter';
 import './_repo-page.scss';
 import { Row } from 'carbon-components-react';
-
+import OpenCases from './../../components/OpenCases'
+import './_repo-page.scss'
 const headers1 = [
   {
     key: 'name',
@@ -39,16 +40,19 @@ const rows1 = [];
 const RepoPage = () => {
   return (
     <Grid className="repo-page">
+        <Column lg = {15}>
+        <OpenCases/>
+        </Column>
             <Column lg={4}> 
                 <TablaSeveridad/>
             </Column>
             <Column lg ={12}> 
                 <Row> 
-                    <Column>
-                        <InfoQuarter/>
-                    </Column>
-                    <Column>
-                        <InfoQuarter/>
+                     <Column>
+                        <div id='tarjetas'>
+                            <InfoQuarter/>
+                            <InfoQuarter/>
+                        </div>
                     </Column>
                 </Row>
                 <Row>

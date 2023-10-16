@@ -13,13 +13,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="background-container">
-
         <TutorialHeader />  
         <Content>
-            <OpenCases/>
           <Switch>
-            {/* <Route exact path="/" component={LandingPage} /> */}
-            {/* <Route path="/repos" component={RepoPage} /> */}
             <Route path="/" component={RepoPage} />
           </Switch>
         </Content>
