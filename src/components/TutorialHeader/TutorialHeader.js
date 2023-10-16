@@ -27,7 +27,7 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName as={Link} to="/" prefix="IBM"> {/* Utiliza Link para la navegación */}
-          Carbon Tutorial
+          Grupo Aval Technical Resolution Team
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem as={Link} to="/repos">Repositories</HeaderMenuItem> {/* Utiliza Link para la navegación */}
