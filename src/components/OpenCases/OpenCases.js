@@ -59,9 +59,9 @@ const OpenCases = () => (
                     { id: 'option-5', text: 'Option 5' , label: 'texto' },
                     { id: 'option-6', text: 'Option 6' },
                   ]}
-            label= 'Comparación'
+            label= 'Jueves 12/09/2022'
             playgroundWidth={400}
-            titleText={<><ToggletipLabel>Fecha de corte</ToggletipLabel><Toggletip align="top-left"><ToggletipButton label="Show information"><Information /></ToggletipButton><ToggletipContent><p>La fecha de corte se refiere a</p></ToggletipContent></Toggletip></>}
+            titleText={<><ToggletipLabel>Comparacion</ToggletipLabel><Toggletip align="top-left"><ToggletipButton label="Show information"><Information /></ToggletipButton><ToggletipContent><p>La fecha de corte se refiere a</p></ToggletipContent></Toggletip></>}
             warnText="Warning message that is really long can wrap to more lines but should not be excessively long."
           />
         </div>
