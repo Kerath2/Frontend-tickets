@@ -9,7 +9,7 @@
 
 /* App.css */
 .background-container {
-  background-color: #d9d9d9; /* Cambia esto al color de fondo deseado */
+  background-color: #e8e8e8; /* Cambia esto al color de fondo deseado */
   font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   flex-direction: column; /* O cambia a 'row' si deseas que ocupe toda la altura */

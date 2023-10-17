@@ -4,5 +4,26 @@
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 50px;
-    background-color: #d9d9d9;
+    background-color: #e8e8e8;
+}
+
+
+#fila{
+  padding-inline: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result{
+  font-weight: bold;
+}
+
+#resultVerde{
+  font-weight: bold;
+  color: #24a149;
+}
+
+#quarter{
+  padding-inline: 10px;
+  font-weight: bold;
 }

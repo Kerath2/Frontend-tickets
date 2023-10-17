@@ -15,7 +15,7 @@ var fechaCorte = 'Viernes 18/08/2023';
 
 const OpenCases = () => (
     <div className='box-container'>
-      <h3> Open Cases </h3>
+      <h3 id ='openC'> Open Cases </h3>
       <div className='filaDropDowns'> 
         <div id = 'dropdownContainer'> 
           <FluidDropdown
