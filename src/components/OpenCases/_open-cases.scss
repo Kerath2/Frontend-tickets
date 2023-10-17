@@ -3,16 +3,12 @@
   display: inline-flex;
 }
 
-#dropdown-container {
-  flex: 1;
-  margin-right: 10px; /* Agrega margen entre los Dropdowns */
-  width: 300px;
-}
-
 
 .box-container{
-  background-color: #ffffff;
+  display: inline-flex;
+  display: space-between;
   background-color: #ffffff;
   height: 200px; /* Establecer la altura deseada */
   padding: 20px; /* Agregar espacio interior */
+  margin-top: 40px;
 }

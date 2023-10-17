@@ -11,5 +11,12 @@
 .background-container {
   background-color: #d9d9d9; /* Cambia esto al color de fondo deseado */
   font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column; /* O cambia a 'row' si deseas que ocupe toda la altura */
+  align-items: stretch;
+  height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
+  width: 100%; /* Establece el ancho al 100% del ancho de la ventana */
+  margin: 0; /* Elimina los márgenes para llenar todo el espacio */
+  padding: 0; /* Elimina el relleno para llenar todo el espacio */
 }
 
