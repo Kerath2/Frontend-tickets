@@ -6,6 +6,7 @@ import RepoTable from './../../components/RepoTable';
 import './_repo-page.scss';
 import { Row } from 'carbon-components-react';
 import OpenCases from './../../components/OpenCases'
+import TablaSev1 from './../../components/TablaSev1/'
 const headers1 = [
   {
     key: 'name',
@@ -32,8 +33,8 @@ const RepoPage = () => {
       <Column lg={16}>
         <div id='severidad_1'> 
         <Grid>
-          <Column lg={3}>
-            <TablaSeveridad/>
+          <Column lg={4}>
+            <TablaSev1/>
           </Column>
           <Column lg={12}>
             <Grid >

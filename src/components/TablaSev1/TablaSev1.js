@@ -8,6 +8,7 @@ import {
 } from '@carbon/react';
 
 import { headers, rows } from './TableData'; // Importa tus datos
+import './_tabla-sev1.scss'
 
 const TablaSev1 = () => {
   return (
@@ -16,7 +17,7 @@ const TablaSev1 = () => {
         <StructuredListHead>
           <StructuredListRow head>
             {headers.map((header) => (
-              <StructuredListCell key={header.key} head>
+              <StructuredListCell key={header.key} head id='titulo'>
                 {header.header}
               </StructuredListCell>
             ))}
@@ -24,12 +25,12 @@ const TablaSev1 = () => {
         </StructuredListHead>
         <StructuredListBody>
           {rows.map((row) => (
-            <StructuredListRow key={row.id}>
-              <StructuredListCell>
+            <StructuredListRow key={row.id} >
+              <StructuredListCell id={row.id}>
                 {row.severidad}
               </StructuredListCell>
-              <StructuredListCell>
-                {row.cantidad}
+              <StructuredListCell id="otros">
+                {row.cantidad }
               </StructuredListCell>
             </StructuredListRow>
           ))}

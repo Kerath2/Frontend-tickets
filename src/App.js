@@ -5,14 +5,12 @@ import RepoPage from './content/RepoPage';
 import TutorialHeader from './components/TutorialHeader';
 import './App.css'
 
-import TablaSev1 from './components/TablaSev1'
 
 function App() {
   return (
     <BrowserRouter>
       <div className="background-container">
         <TutorialHeader />  
-        <TablaSev1/>
         <Content>
           <Switch>
             <Route path="/" component={RepoPage} />
