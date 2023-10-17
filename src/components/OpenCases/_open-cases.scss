@@ -1,11 +1,12 @@
 .open-cases-container {
   justify-content: space-between; /* Puedes ajustar esto según tu diseño */
-  display: flex;
+  display: inline-flex;
 }
 
-.dropdown-container {
+#dropdown-container {
   flex: 1;
   margin-right: 10px; /* Agrega margen entre los Dropdowns */
+  width: 300px;
 }
 
 

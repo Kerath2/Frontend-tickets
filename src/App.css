@@ -45,5 +45,7 @@
   flex-direction: column; /* Esto asegura que los elementos se apilen verticalmente */
   align-items: center; /* Alinea los elementos horizontalmente al centro */
   justify-content: space-between; /* Separa los elementos verticalmente con espacio entre ellos */
+  font-family: 'IBM Plex Sans', sans-serif;
+
 }
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Grid, Column, ColumnHang } from '@carbon/react';
-import RepoTable from './RepoTable';
 import TablaSeveridad from './../../components/TablaSeveridad';
 import InfoQuarter from './../../components/InfoQuarter';
+import RepoTable from './../../components/RepoTable';
 import './_repo-page.scss';
 import { Row } from 'carbon-components-react';
 import OpenCases from './../../components/OpenCases'
-import './_repo-page.scss'
 const headers1 = [
   {
     key: 'name',
@@ -19,23 +18,6 @@ const headers1 = [
 ];
 
 const rows1 = [];
-
-// const RepoPage = () => {
-//   return (
-//     <Grid className="repo-page">
-//       <Column lg={16} className="repo-page__r1">
-//       <div className='container'>
-//     <TablaSeveridad/>    
-//     <InfoQuarter/>
-//     <InfoQuarter/>
-//     </div>
-//       </Column>
-//       <Column lg={16} className="repo-page__r1">
-//         <RepoTable headers={headers1} rows={rows1} />
-//       </Column>
-//     </Grid>
-//   );
-// };
 
 const RepoPage = () => {
   return (
@@ -50,7 +32,7 @@ const RepoPage = () => {
       <Column lg={16}>
         <div id='severidad_1'> 
         <Grid>
-          <Column lg={4}>
+          <Column lg={3}>
             <TablaSeveridad/>
           </Column>
           <Column lg={12}>

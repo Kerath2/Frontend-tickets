@@ -7,7 +7,7 @@ const OpenCases = () => (
     <div className='box-container'>
         <p> Open Cases</p>
     <div className="open-cases-container">
-      <div className="dropdown-container">
+      <div id="dropdown-container">
         <Dropdown
           id="dropdown1"
           titleText="Dropdown 1"
@@ -19,7 +19,7 @@ const OpenCases = () => (
         />
       </div>
 
-      <div className="dropdown-container">
+      <div id="dropdown-container">
         <Dropdown
           id="dropdown2"
           titleText="Dropdown 2"
@@ -31,7 +31,7 @@ const OpenCases = () => (
         />
       </div>
 
-      <div className="dropdown-container">
+      <div id="dropdown-container">
         <Dropdown
           id="dropdown3"
           titleText="Dropdown 3"
