@@ -21,7 +21,7 @@ const rows1 = [];
 
 const RepoPage = () => {
   return (
-    <Grid>
+    <Grid id='gridGrande'>
       <Column lg={16}>
         <OpenCases/>
       </Column>

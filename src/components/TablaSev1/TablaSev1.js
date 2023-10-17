@@ -1,5 +1,5 @@
 import React from 'react';
-import './_repo-table.scss'
+
 import {
   DataTable,
   TableContainer,
@@ -11,11 +11,13 @@ import {
   TableCell,
 } from '@carbon/react';
 
-import {headers, rows} from './tableData'
-import './_repo-table.scss';
 
 
-const RepoTable = ()=> {
+import './_tabla-sev1.scss'
+import {headers, rows} from './TableData'
+import './_tabla-sev1.scss'
+
+const TablaSev1 = () => {
   return (
     <div id='container'> 
         <DataTable
@@ -37,7 +39,7 @@ const RepoTable = ()=> {
                   {rows.map((row) => (
                     <TableRow {...getRowProps({ row })}>
                       {row.cells.map((cell) => (
-                        <TableCell key={cell.id}  >{cell.value}</TableCell>
+                        <TableCell key={cell.id} id = 'celda'>{cell.value}</TableCell>
                       ))}
                     </TableRow>
                   ))}
@@ -46,12 +48,9 @@ const RepoTable = ()=> {
             </TableContainer>
           )}
         />
-
-
     </div>
   );
-};
+}
 
 
-export default RepoTable;
-
+export default TablaSev1;
