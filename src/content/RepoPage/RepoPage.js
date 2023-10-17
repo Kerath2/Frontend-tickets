@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Column } from '@carbon/react';
+import { Grid, Column, ColumnHang } from '@carbon/react';
 import RepoTable from './RepoTable';
 import TablaSeveridad from './../../components/TablaSeveridad';
 import InfoQuarter from './../../components/InfoQuarter';
@@ -39,27 +39,44 @@ const rows1 = [];
 
 const RepoPage = () => {
   return (
-    <Grid className="repo-page">
-        <Column lg = {15}>
+    <Grid>
+      <Column lg={16}>
         <OpenCases/>
-        </Column>
-            <Column lg={4}> 
-                <TablaSeveridad/>
-            </Column>
-            <Column lg ={12}> 
-                <Row> 
-                     <Column>
-                        <div id='tarjetas'>
-                            <InfoQuarter/>
-                            <InfoQuarter/>
-                        </div>
-                    </Column>
-                </Row>
-                <Row>
-                   <RepoTable/> 
-                </Row>
-            </Column>
+      </Column>
+      <Column Lg={16}>
+        <div id='espacio_vacio'>
+        </div>
+      </Column>
+      <Column lg={16}>
+        <div id='severidad_1'> 
+        <Grid>
+          <Column lg={4}>
+            <TablaSeveridad/>
+          </Column>
+          <Column lg={12}>
+            <Grid >
+              <Column lg={16}>
+              <Grid condensed>
+                <Column lg={7}>
+                <InfoQuarter/>
+                </Column>
+                <Column lg={7}>
+                <InfoQuarter/>
+                </Column>
+                <Column lg={2}>
+                </Column>
+              </Grid>
+              </Column>
+              <Column lg={16}>
+              <RepoTable/>
+              </Column>
+            </Grid>
+          </Column>
+        </Grid>
+        </div>
+      </Column>
     </Grid>
+    
   );
 };
 export default RepoPage;
