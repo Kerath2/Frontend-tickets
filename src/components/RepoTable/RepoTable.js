@@ -9,7 +9,7 @@ import {
   TableHeader,
   TableBody,
   TableCell,
-  Pagination
+  Pagination,
 } from '@carbon/react';
 
 import { headers, rows } from './tableData';
@@ -17,7 +17,7 @@ import './_repo-table.scss';
 
 const RepoTable = () => {
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(3);
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
@@ -25,11 +25,12 @@ const RepoTable = () => {
 
   const handlePageSizeChange = (newPageSize) => {
     setPageSize(newPageSize);
+    setPage(1);
   };
 
-  const startIndex = (page - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-  const paginatedRows = rows.slice(startIndex, endIndex);
+  const allRows = rows; // Todos los datos
+
+  const paginatedRows = allRows.slice((page - 1) * pageSize, page * pageSize);
 
   return (
     <div id="container">
@@ -66,8 +67,8 @@ const RepoTable = () => {
               itemsPerPageText="Items per page:"
               page={page}
               pageSize={pageSize}
-              pageSizes={[3, 5 , 30, 40, 50]}
-              totalItems={rows.length}
+              pageSizes={[3, 5, 30, 40, 50]}
+              totalItems={allRows.length} // Usa la longitud de todos los datos
               onChange={(e) => {
                 handlePageChange(e.page);
                 handlePageSizeChange(e.pageSize);

@@ -10,7 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="background-container">
-        <TutorialHeader />  
+        <Theme theme='g100'>
+        <TutorialHeader />
+        </Theme>
         <Content>
           <Switch>
             <Route path="/" component={RepoPage} />
