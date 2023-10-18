@@ -16,6 +16,7 @@ import {
   HeaderSideNavItems,
 } from '@carbon/react';
 import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
+import UserMenu from './../UserMenu'
 
 
 const TutorialHeader = () => (
@@ -53,8 +54,8 @@ const TutorialHeader = () => (
           <HeaderGlobalAction aria-label="Notifications" tooltipAlignment="center">
             <Notification size={20} />
           </HeaderGlobalAction>
-          <HeaderGlobalAction aria-label="User Avatar" tooltipAlignment="center">
-            <UserAvatar size={20} />
+          <HeaderGlobalAction  tooltipAlignment="center">
+            <UserMenu/>
           </HeaderGlobalAction>
           <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
             <Switcher size={20} />

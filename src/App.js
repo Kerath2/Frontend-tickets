@@ -5,6 +5,8 @@ import RepoPage from './content/RepoPage';
 import TutorialHeader from './components/TutorialHeader';
 import './App.css'
 
+import './components/UserMenu/'
+import UserMenu from './components/UserMenu/';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <TutorialHeader />
         </Theme>
         <Content>
+          <UserMenu/>
           <Switch>
             <Route path="/" component={RepoPage} />
           </Switch>
