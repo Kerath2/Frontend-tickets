@@ -13,7 +13,7 @@ import './_tabla-sev1.scss'
 const TablaSev1 = () => {
   return (
     <div id='container'>
-      <StructuredListWrapper>
+      <StructuredListWrapper >
         <StructuredListHead>
           <StructuredListRow head>
             {headers.map((header) => (
