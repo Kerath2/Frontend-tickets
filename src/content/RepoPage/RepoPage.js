@@ -1,6 +1,6 @@
 import React , {useEffect , useState} from 'react';
 import { Octokit } from '@octokit/core';
-import { Link ,Grid, Column, ColumnHang } from '@carbon/react';
+import { Link ,Grid, Column, DataTableSkeleton, Pagination} from '@carbon/react';
 import TablaSeveridad from './../../components/TablaSeveridad';
 import InfoQuarter from './../../components/InfoQuarter';
 import RepoTable from './../../components/RepoTable';
@@ -98,6 +98,10 @@ const getRowItems = (rows) =>
   }));
 
 const RepoPage = () => {
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
+
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
   const [rows, setRows] = useState([]);
@@ -161,7 +165,22 @@ const RepoPage = () => {
               </Grid>
               </Column>
               <Column lg={16}>
-              <RepoTable headers={headers} rows={rows}/>
+              <RepoTable headers={headers} 
+                         rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}/>
+              <Pagination
+                totalItems={rows.length}
+                backwardText="Previous page"
+                forwardText="Next page"
+                pageSize={currentPageSize}
+                pageSizes={[5, 10, 15, 25]}
+                itemsPerPageText="Items per page"
+                onChange={({ page, pageSize }) => {
+                  if (pageSize !== currentPageSize) {
+                    setCurrentPageSize(pageSize);
+                  }
+                  setFirstRowIndex(pageSize * (page - 1));
+                }}
+              />
               </Column>
             </Grid>
           </Column>
