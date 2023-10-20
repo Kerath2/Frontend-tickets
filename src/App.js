@@ -6,17 +6,17 @@ import TutorialHeader from './components/TutorialHeader';
 import './App.css'
 
 
-import MyFileUploader from './components/MyFileUploader/'
+import Login from './components/Login'
 
 function App() {
   return (
     <BrowserRouter>
-      <MyFileUploader/>
       <div className="background-container">
         <Theme theme='g100'>
         <TutorialHeader />
         </Theme>
         <Content>
+          <Login/>
           <Switch>
             <Route path="/" component={RepoPage} />
           </Switch>
