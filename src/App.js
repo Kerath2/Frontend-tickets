@@ -5,9 +5,13 @@ import RepoPage from './content/RepoPage';
 import TutorialHeader from './components/TutorialHeader';
 import './App.css'
 
+
+import MyFileUploader from './components/MyFileUploader/'
+
 function App() {
   return (
     <BrowserRouter>
+      <MyFileUploader/>
       <div className="background-container">
         <Theme theme='g100'>
         <TutorialHeader />

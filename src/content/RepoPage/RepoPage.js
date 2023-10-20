@@ -10,6 +10,8 @@ import OpenCases from './../../components/OpenCases'
 import TablaSev1 from './../../components/TablaSev1/'
 
 
+
+
 const octokitClient = new Octokit({});
 
 const headers = [
